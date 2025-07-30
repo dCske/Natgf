@@ -1,0 +1,33 @@
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .header {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .section {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .memory-item {
+            border: 1px solid #f3f4f6;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .memory-item img {
+            width: 100%;
+            object-fit: contain; /* Show full image without cropping */
+            max-height: 300px; /* Set reasonable max height */
+        }
+        .large-image {
+            max-height: 400px; /* Set a larger max height for 2040x1530 images */
+        }
+        .memory-content {
+            padding: 15px;
+        }
