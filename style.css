@@ -1,33 +1,55 @@
-        body {
-            font-family: 'Arial', sans-serif;
-        }
-        .header {
-            background: linear-gradient(to right, #ff7e5f, #feb47b);
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        .section {
-            background: white;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        .memory-item {
-            border: 1px solid #f3f4f6;
-            border-radius: 8px;
-            overflow: hidden;
-            margin-bottom: 20px;
-        }
-        .memory-item img {
-            width: 100%;
-            object-fit: contain; /* Show full image without cropping */
-            max-height: 300px; /* Set reasonable max height */
-        }
-        .large-image {
-            max-height: 400px; /* Set a larger max height for 2040x1530 images */
-        }
-        .memory-content {
-            padding: 15px;
-        }
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+
+.section {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.memory-item {
+    border: 1px solid #f3f4f6;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.memory-item:hover {
+    transform: scale(1.05);
+}
+
+.memory-item img {
+    width: 100%;
+    object-fit: cover; /* Show full image without cropping */
+    max-height: 400px; /* Increased max height for images */
+}
+
+.large-image {
+    max-height: 500px; /* Increased max height for larger images */
+}
+
+.memory-content {
+    padding: 15px;
+}
+
+/* Add some decorative hearts */
+.memory-item::after {
+    content: "❤️";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    opacity: 0.7;
+}
