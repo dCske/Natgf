@@ -34,7 +34,7 @@ body {
 .memory-item img {
     width: 100%;
     height: auto; /* Maintain aspect ratio */
-    max-height: 500px; /* Increased max height for images */
+    max-height: 1500px; /* Increased max height for images */
     object-fit: cover; /* Show full image without cropping */
 }
 
