@@ -39,7 +39,7 @@ body {
 }
 
 .large-image {
-    max-height: 600px; /* Increased max height for larger images */
+    max-height: 1600px; /* Increased max height for larger images */
 }
 
 .memory-content {
