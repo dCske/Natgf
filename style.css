@@ -24,6 +24,7 @@ body {
     overflow: hidden;
     margin-bottom: 20px;
     transition: transform 0.3s;
+    position: relative; /* Added for positioning the heart */
 }
 
 .memory-item:hover {
@@ -32,12 +33,13 @@ body {
 
 .memory-item img {
     width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 500px; /* Increased max height for images */
     object-fit: cover; /* Show full image without cropping */
-    max-height: 400px; /* Increased max height for images */
 }
 
 .large-image {
-    max-height: 500px; /* Increased max height for larger images */
+    max-height: 600px; /* Increased max height for larger images */
 }
 
 .memory-content {
